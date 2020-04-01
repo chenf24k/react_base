@@ -1,11 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import {
+    ToDoHeader,
+    ToDoInput,
+    ToDoList
+} from './components'
+
 
 export default class App extends Component {
     render() {
         return (
-            <div>
-                app
-            </div>
+            <Fragment>
+                <ToDoHeader />
+                <ToDoInput />
+                <ToDoList />
+            </Fragment>
         )
     }
 }
